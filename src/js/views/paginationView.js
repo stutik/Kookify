@@ -61,7 +61,7 @@ class PaginationView extends View {
     </button>
     <button data-goto="${
       curPage + 1
-    }" class="btn--inline pagination__btn--prev">
+    }" class="btn--inline pagination__btn--next">
       <svg class="search__icon">
         <use href="${icons}#icon-arrow-left"></use>
       </svg>
