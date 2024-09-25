@@ -75,7 +75,7 @@ export const getSearchResultsPage = function (page = state.search.page) {
 };
 
 export const updateServings = function (newServings) {
-  state.recipe.ingredients.foreach(ing => {
+  state.recipe.ingredients.forEach(ing => {
     ing.quantity = (ing.quantity * newServings) / state.recipe.servings;
     // newQt = oldQt * newServings / oldServings // 2*8/4 = 4
   });
@@ -133,7 +133,7 @@ export const uploadRecipe = async function (newRecipe) {
       });
     const recipe = {
       title: newRecipe.title,
-      source_url: newRecipe.souceUrl,
+      source_url: newRecipe.sourceUrl,
       image_url: newRecipe.image,
       publisher: newRecipe.publisher,
       cooking_time: +newRecipe.cookingTime,
